@@ -6,6 +6,7 @@ This project is organized into two main sections: **backend** and **frontend**. 
 
 The backend is organized into multiple microservices, each having its own folder with its own codebase, infrastructure, and database (if necessary). Here's the full nested project structure for the backend:
 
+```
 /backend
 │
 ├── IdentityService/
@@ -27,7 +28,7 @@ The backend is organized into multiple microservices, each having its own folder
 │ │ ├── CandleService.Core/
 │ │ └── CandleService.Infrastructure/
 │ │ ├── Events/ # Event handlers (e.g., handle new candle or average calculation event)
-│ │ └── MessageBus/ # Messaging infrastructure (RabbitMQ )
+│ │ └── MessageBus/ # Messaging infrastructure (RabbitMQ)
 │ ├── tests/
 │ │ └── CandleService.Tests/
 │ ├── Dockerfile
@@ -74,6 +75,7 @@ The backend is organized into multiple microservices, each having its own folder
 │ ├── Events/ # Common event handling mechanisms
 │ └── MessageBus/ # Message bus implementation shared across microservices
 └── README.md
+```
 
 ### Description of Each Folder:
 
