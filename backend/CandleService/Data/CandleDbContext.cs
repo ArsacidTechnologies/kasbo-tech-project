@@ -1,7 +1,7 @@
-using CandleService.Models;
+using candle_service.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CandleService.Data
+namespace candle_service.Data
 {
     public class CandleDbContext : DbContext
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace CandleService.Models
+namespace candle_service.Models
 {
     public class Candle
     {

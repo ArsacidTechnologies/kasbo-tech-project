@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CandleService.Migrations
+namespace candle_service.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigrate : Migration
