@@ -1,5 +1,6 @@
 import CandleForm from "@/components/CandleForm";
 import CandleList from "@/components/CandleList";
+import CandleListServer from "@/components/CandleListServer";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
           <h1 className="mb-6 text-2xl font-bold">Candle Form</h1>
           <CandleForm />
           <CandleList />
+          <CandleListServer />
         </div>
       </div>
     </main>

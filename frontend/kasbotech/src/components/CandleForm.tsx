@@ -33,7 +33,7 @@ const CandleForm: FC = ({}) => {
 
   const mutation = useMutation({
     mutationFn: async (formData: CandleFormInputs) => {
-      const response = await fetch("https://localhost:7236/api/Candles", {
+      const response = await fetch("https://localhost:5000/api/candles", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
