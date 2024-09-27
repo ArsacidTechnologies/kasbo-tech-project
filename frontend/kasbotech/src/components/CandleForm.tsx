@@ -33,13 +33,16 @@ const CandleForm: FC = ({}) => {
 
   const mutation = useMutation({
     mutationFn: async (formData: CandleFormInputs) => {
-      const response = await fetch("https://localhost:5000/api/candles", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/candles`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         },
-        body: JSON.stringify(formData),
-      });
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit candle data");

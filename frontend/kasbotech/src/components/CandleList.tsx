@@ -7,7 +7,9 @@ export default function CandleList() {
 
   return (
     <div className="mt-8">
-      <h2 className="text-lg font-bold">New Submitted Candles</h2>
+      <h2 className="text-lg font-bold">
+        New Submitted Candles {candles?.length}
+      </h2>
       <ul>
         {candles.map((candle, index) => (
           <li key={index} className="py-2">

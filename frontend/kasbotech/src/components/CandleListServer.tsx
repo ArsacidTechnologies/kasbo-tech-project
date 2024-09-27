@@ -23,7 +23,9 @@ const CandleListServer: FC = () => {
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ["candles"],
     queryFn: async () => {
-      const response = await fetch("https://localhost:5000/api/candles");
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/candles`,
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch candles");
       }
@@ -55,7 +57,7 @@ const CandleListServer: FC = () => {
 
   return (
     <div className="mt-8">
-      <h2 className="text-lg font-bold">Last 200 Candles</h2>
+      <h2 className="text-lg font-bold">Last 200 Candles {data?.length}</h2>
       <ul className="divide-y divide-gray-200">
         {data?.map((candle) => (
           <li key={candle.id} className="py-2">

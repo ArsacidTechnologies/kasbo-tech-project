@@ -21,13 +21,16 @@ export default function LoginPage() {
   // Define the mutation for login
   const mutation = useMutation({
     mutationFn: async (loginData: LoginDto) => {
-      const response = await fetch("https://localhost:5000/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(loginData),
         },
-        body: JSON.stringify(loginData),
-      });
+      );
 
       if (!response.ok) {
         throw new Error("Invalid credentials");
