@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService", "IdentityService\IdentityService.csproj", "{CF892C79-9F5E-4750-AF53-799084C9E5C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService", "IdentityService\IdentityService.csproj", "{CF892C79-9F5E-4750-AF53-799084C9E5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "GatewayService\GatewayService.csproj", "{45666197-418A-4003-A220-B9178A5AE048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CF892C79-9F5E-4750-AF53-799084C9E5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF892C79-9F5E-4750-AF53-799084C9E5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF892C79-9F5E-4750-AF53-799084C9E5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45666197-418A-4003-A220-B9178A5AE048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45666197-418A-4003-A220-B9178A5AE048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45666197-418A-4003-A220-B9178A5AE048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45666197-418A-4003-A220-B9178A5AE048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
