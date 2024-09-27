@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService", "IdentityService\IdentityService.csproj", "{CF892C79-9F5E-4750-AF53-799084C9E5C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "GatewayService\GatewayService.csproj", "{45666197-418A-4003-A220-B9178A5AE048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayService", "GatewayService\GatewayService.csproj", "{45666197-418A-4003-A220-B9178A5AE048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleService", "CandleService\CandleService.csproj", "{4A2582E7-8C41-491C-91BE-B0681E000652}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{45666197-418A-4003-A220-B9178A5AE048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45666197-418A-4003-A220-B9178A5AE048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45666197-418A-4003-A220-B9178A5AE048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2582E7-8C41-491C-91BE-B0681E000652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2582E7-8C41-491C-91BE-B0681E000652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2582E7-8C41-491C-91BE-B0681E000652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2582E7-8C41-491C-91BE-B0681E000652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

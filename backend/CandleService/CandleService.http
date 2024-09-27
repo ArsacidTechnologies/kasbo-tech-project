@@ -1,0 +1,6 @@
+@CandleService_HostAddress = http://localhost:5011
+
+GET {{CandleService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
