@@ -1,7 +1,6 @@
 {
   "Routes": [
     {
-      
       "DownstreamPathTemplate": "/api/Auth/login/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -11,7 +10,31 @@
         }
       ],
       "UpstreamPathTemplate": "/api/login/{everything}",
-      "UpstreamHttpMethod": [  "POST" ]
+      "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Candles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7236
+        }
+      ],
+      "UpstreamPathTemplate": "/api/candles",
+      "UpstreamHttpMethod": ["GET", "POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/candles/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7236
+        }
+      ],
+      "UpstreamPathTemplate": "/api/candles/{id}",
+      "UpstreamHttpMethod": ["GET"]
     }
   ],
   "GlobalConfiguration": {
